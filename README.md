@@ -22,7 +22,7 @@ By: Dana Golebiewski
 
  ## [Video](#table-of-contents)
 
-### [Link to video]()
+### [Link to video](https://drive.google.com/file/d/1Oo-slxf7OtoI3yjjCd8psbG4PWEqM3ZK/view)
 
  ## [Questions](#table-of-contents)
 
