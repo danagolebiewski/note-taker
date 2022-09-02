@@ -1,5 +1,5 @@
 const express = require("express");
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const apiroutes = require("./routes/apiroutes");
 const htmlroutes = require("./routes/htmlroutes");
@@ -13,4 +13,4 @@ app.use("/", htmlroutes);
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
+);heroku
