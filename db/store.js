@@ -18,6 +18,21 @@ class Store {
       return JSON.parse(notes);
     }) 
   }
+  writeNote(note) {
+    note.id = v4();
+    return this.getNotes()
+    .then((notes) => {
+      notes.push(note)
+      return notes
+    })
+    .then((newNotes) =>{
+      return this.write(newNotes);
+    })
+    .then(() => {
+      return note;
+    })
+  }
+  
 };
 
 

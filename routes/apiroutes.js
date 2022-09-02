@@ -11,5 +11,14 @@ router.get("/notes", (req, res) => {
     })
 
 })
+router.post("/notes", (req, res) =>{
+  store.writeNote(req.body)
+  .then((results) => {
+    return res.json(results)
+  })
+  .catch((err) =>{
+    res.status(500).json(err)
+  })
+})
 
 module.exports = router;
