@@ -32,7 +32,17 @@ class Store {
       return note;
     })
   }
-  
+  deleteNote(id) {
+    return this.getNotes()
+    .then((notes) => {
+      return notes.filter((note) => {
+        return note.id !== id
+      })
+    })
+    .then((result) => {
+      return this.write(result);
+    })
+  }
 };
 
 
